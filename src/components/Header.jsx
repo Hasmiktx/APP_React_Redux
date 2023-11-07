@@ -3,7 +3,7 @@
 export const Header = () => {
   return (
     <>
-    <div>Header</div>
+    
     <header class="showcase">
 			<div class="container">
 				<nav>

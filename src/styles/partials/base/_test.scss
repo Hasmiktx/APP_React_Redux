@@ -1,9 +1,3 @@
-// _config.scss
-$font-stack: Arial, Helvetica, sans-serif;
-$light-color: #f4f4f4;
-$primary-color: #0e6cff;
-// $primary-color: #e0ffff;
-$secondary-color: #ff8700;
 
 // Set text color based on bg
 @function set-text-color($color) {
@@ -21,17 +15,9 @@ $secondary-color: #ff8700;
 }
 
 // _style.scss
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-body {
-  background-color: $light-color;
-  font-family: $font-stack;
-  line-height: 1.6;
-}
+
+
 
 img {
   width: 100%;
@@ -43,7 +29,7 @@ a {
 
 .showcase {
   @include set-background($primary-color);
-  height: 600px;
+  height: 400px;
 
   nav {
     display: flex;
@@ -140,7 +126,7 @@ $spaceamounts: (1,2,3,4,5);
 // _mobile.scss
 @media(max-width: 700px) {
   .showcase {
-    height: 400px;
+    height: 200px;
 
     &-content {
       text-align: center;
