@@ -11,6 +11,6 @@ export const Links = () => {
         return <a key={uuidv4()}
          href={data.web_pages[0]} target="-blank">{data.name}</a>
       })} 
-      </div>
+    </div>
   )
 }

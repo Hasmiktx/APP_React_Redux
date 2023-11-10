@@ -4,10 +4,10 @@ export const Header = () => {
   return (
     <>
     
-    <header class="showcase">
-			<div class="container">
+    <header className="showcase">
+			<div className="container">
 				<nav>
-					<h1 class="logo">My Website</h1>
+					<h1 className="logo">Logo</h1>
 					<ul>
 						<li><a href="#">Home</a></li>
 						<li><a href="#">About</a></li>
@@ -15,19 +15,19 @@ export const Header = () => {
 					</ul>
 				</nav>
 
-				<div class="showcase-content">
+				<div className="showcase-content">
 					<div>
-						<h1>Make Your Marketing Real</h1>
-						<p class="my-1">
+						<h1>Welcome to My Website</h1>
+						<p className="my-1">
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
 							eligendi tempore atque laborum. Quisquam nemo at non. Corrupti,
 							vitae dolore.
 						</p>
-						<a href="#" class="btn-primary">Learn More</a>
-						<a href="#" class="btn-secondary">Sign Up</a>
+						<a href="#" className="btn-primary">Learn More</a>
+						<a href="#" className="btn-secondary">Sign Up</a>
 					</div>
 					<img
-						src="https://themesbrand.com/zooki/layouts/images/home-2-img.png"
+						
 					/>
 				</div>
 			</div>

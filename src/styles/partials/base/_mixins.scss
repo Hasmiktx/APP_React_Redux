@@ -1,0 +1,61 @@
+%flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+%flex-col{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+%text-style{
+    color: $primary-color;
+    font-size: larger;
+    font-weight: 400;
+}
+
+%btn {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin: 3px;
+  
+    &:hover {
+      transform: scale(.98);
+    }
+  }
+
+// Set text color based on bg
+@function set-text-color($color) {
+    @if(lightness($color) > 70) {
+      @return #333;
+    } @else {
+      @return #fff;
+    }
+  }
+
+  
+// Set background & text color
+@mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color)
+  }
+
+
+
+  
+// _mobile.scss
+@media(max-width: 700px) {
+    .showcase {
+      height: 200px;
+  
+      &-content {
+        text-align: center;
+  
+        img {
+          display: none;
+        }
+      }
+    }
+  }

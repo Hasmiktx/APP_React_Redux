@@ -1,6 +1,19 @@
 .search-div{
-    background-color:$light-color;
-    display: flex;
-    flex-direction: column;
+    @extend %flex-col;
     align-items: center;
+    justify-content: space-around;
+    min-height: 200px;
+    padding: 2rem;
+    label{
+        @extend %text-style;
+    }
+    p{
+        @extend %text-style;
+    }
+    select{
+        width: 40%;
+        height: 2rem;
+        border: 3px solid $primary-color;
+        border-radius: 1rem;
+    }
 }

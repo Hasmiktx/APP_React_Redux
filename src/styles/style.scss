@@ -1,5 +1,8 @@
 @import "./partials/base/variabels";
+@import "./partials//base/mixins";
 @import "./partials/base/common";
 @import "./partials/components/search";
 @import "./partials/base/test";
-@import "./partials/pages/links"
+@import "./partials/pages/links";
+@import "./partials/components/btn";
+@import "./partials/components/header"

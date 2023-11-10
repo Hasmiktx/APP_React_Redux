@@ -1,5 +1,12 @@
 .link_div{
-    display: flex;
-    flex-direction: column;
-   margin-left: 20rem;
+    @extend %flex-col;
+    padding: 3rem 0  5rem 40%;
+
+   a{
+    @extend %text-style;
+    &:hover{
+        color: $secondary-color;
+    }
+    
+   }
 }

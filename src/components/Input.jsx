@@ -27,26 +27,26 @@ const InputComp = () => {
     
 
     useEffect( ()=>{
-       dispatch(fetchByCountry(countryName))
+       dispatch(fetchByCountry(countryName));
+       console.log(status,errors);
     },[countryName,dispatch])
   return (
     <>
-    <label>Choose  a country:</label>
-<select id="country" name="countryList" form="countryform"
-value={countryName}
- onChange={(e)=>dispatch(addCountry(e.target.value))}>
-  <option value="">Select Country...</option>
-  {countyArr.map((data)=>{
-    return (
-        <option value={data} key={uuidv4()}>{data}</option>
+   <label>Choose  a country:</label>
+   <select id="country" name="countryList" form="countryform"
+          value={countryName}
+          onChange={(e)=>dispatch(addCountry(e.target.value))}>
+    <option value="">Select Country...</option>
+              {countyArr.map((data)=>{
+            return (
+              <option value={data} key={uuidv4()}>{data}</option>
 
-    )
-  })}
+             )
+           }
+          )}
   
-</select>
-<p>Selected:{countryName}</p>
-<h3>Status:{status}</h3>
-<h3>Errors{errors}</h3>
+  </select>
+  <p>Selected Country-{countryName}</p>
 
 </>
   )

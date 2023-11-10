@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { fetchURL, getError, getStatus} from "../feature/country/countrySilice";
 import { useEffect } from "react";
-import{increment,decrement} from "../feature/counter/counterSlice"
+
 import InputComp from "./Input";
 
 
@@ -21,17 +21,14 @@ const Search = () => {
      
       dispatch(fetchURL());
       // console.log(listData,"listData");
-      
+      console.log(status,errors)
     },[])
 
 
   return (
     <div className="search-div">
     
-    <span>Status1:{status}</span>
-    <span>Error1:{errors}</span>
-
-    <InputComp/>
+        <InputComp/>
 
 
   </div>
