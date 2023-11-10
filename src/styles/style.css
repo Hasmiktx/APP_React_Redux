@@ -1,4 +1,4 @@
-.showcase-content, .showcase nav ul, .showcase nav {
+.showcase-content, .showcase nav ul, .showcase nav, .content-box {
   display: flex;
   flex-wrap: wrap;
 }
@@ -51,21 +51,24 @@ a {
   text-decoration: none;
 }
 
+.content-box {
+  padding: 10rem 0;
+}
+
 .search-div {
+  min-height: 30rem;
+  min-width: 30rem;
   align-items: center;
-  justify-content: space-around;
-  min-height: 200px;
-  padding: 2rem;
 }
 .search-div select {
-  width: 40%;
+  width: 25rem;
   height: 2rem;
   border: 3px solid #002395;
   border-radius: 1rem;
 }
 
 .link_div {
-  padding: 3rem 0 5rem 40%;
+  padding-left: 10rem;
 }
 .link_div a:hover {
   color: #ff8700;

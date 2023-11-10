@@ -9,10 +9,14 @@ function App() {
  
   return (
     <>
-      <div className='main-container'>
+      
         <Header/>
+        
+        <div className='content-box'>
      <Search/>
      <Links/>
+        
+     
     </div>
         
     </>

@@ -1,9 +1,13 @@
 .search-div{
     @extend %flex-col;
+    min-height: 30rem;
+    min-width: 30rem;
     align-items: center;
-    justify-content: space-around;
-    min-height: 200px;
-    padding: 2rem;
+    
+    
+    
+    // border: 1px solid black;
+    
     label{
         @extend %text-style;
     }
@@ -11,9 +15,10 @@
         @extend %text-style;
     }
     select{
-        width: 40%;
+        width: 25rem;
         height: 2rem;
         border: 3px solid $primary-color;
         border-radius: 1rem;
+        
     }
 }
