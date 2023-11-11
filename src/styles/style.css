@@ -34,6 +34,9 @@
   .showcase-content img {
     display: none;
   }
+  .search-div select {
+    max-width: 10rem;
+  }
 }
 * {
   box-sizing: border-box;
@@ -74,6 +77,10 @@ a {
   color: #ff8700;
 }
 
+.loading_div {
+  min-width: 160px;
+}
+
 .btn-primary {
   background-color: #002fc8;
   color: #fff;
@@ -88,6 +95,8 @@ a {
   background-color: #002395;
   color: #fff;
   height: 400px;
+  width: 100vw;
+  border: 1px solid orange;
 }
 .showcase nav {
   align-items: center;

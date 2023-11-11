@@ -19,9 +19,8 @@ export const Header = () => {
 					<div>
 						<h1>Welcome to My Website</h1>
 						<p className="my-1">
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
-							eligendi tempore atque laborum. Quisquam nemo at non. Corrupti,
-							vitae dolore.
+						Select the country and view links to universities.
+						By clicking on the links you can visit the website.
 						</p>
 						<a href="#" className="btn-primary">Learn More</a>
 						<a href="#" className="btn-secondary">Sign Up</a>

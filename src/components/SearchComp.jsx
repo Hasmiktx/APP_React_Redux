@@ -6,6 +6,7 @@ import InputComp from "./Input";
 
 
 
+
 const Search = () => {
 
     
@@ -29,6 +30,7 @@ const Search = () => {
     <div className="search-div">
     
         <InputComp/>
+        
 
 
   </div>

@@ -6,6 +6,7 @@ import { useEffect} from "react";
 
 import { v4 as uuidv4 } from 'uuid';
 
+
 import { addCountry, fetchByCountry, getChoosenCountry,getStatusByCountry,getErrorByCountry } from "../feature/choosenCountry/choosenCountrySlice";
 
 
@@ -46,7 +47,7 @@ const InputComp = () => {
           )}
   
   </select>
-  <p>Selected Country-{countryName}</p>
+  <p>Selected Country-{countryName? countryName: "no choosen county"}</p>
 
 </>
   )

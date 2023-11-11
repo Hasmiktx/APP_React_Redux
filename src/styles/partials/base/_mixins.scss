@@ -49,6 +49,7 @@
 @media(max-width: 700px) {
     .showcase {
       height: 200px;
+      
   
       &-content {
         text-align: center;
@@ -56,6 +57,11 @@
         img {
           display: none;
         }
+      }
+    }
+    .search-div{
+      select{
+        max-width: 10rem;
       }
     }
   }

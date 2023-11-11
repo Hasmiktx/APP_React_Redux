@@ -2,7 +2,8 @@
 .showcase {
     @include set-background($primary-color);
     height: 400px;
-  
+    width: 100vw;
+    border: 1px solid orange;
     nav {
       @extend %flex;
       align-items: center;
