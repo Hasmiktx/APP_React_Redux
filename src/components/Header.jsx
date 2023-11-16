@@ -7,7 +7,7 @@ export const Header = () => {
     <header className="showcase">
 			<div className="container">
 				<nav>
-					<h1 className="logo">Logo</h1>
+					<img className="logo" src="../public/logo.webp"/>
 					<ul>
 						<li><a href="#">Home</a></li>
 						<li><a href="#">About</a></li>

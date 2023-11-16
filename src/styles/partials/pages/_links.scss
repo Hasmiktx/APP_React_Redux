@@ -1,6 +1,9 @@
 .link_div{
     @extend %flex-col;
-    padding-left: 10rem;
+    min-width: 100vw;
+    // border:1px solid black;
+    padding-left: 38vw;
+    
 
    a{
     @extend %text-style;
@@ -9,9 +12,4 @@
     }
     
    }
-}
-
-.loading_div{
-    min-width: 160px;
-    
 }

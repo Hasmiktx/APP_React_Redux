@@ -16,8 +16,10 @@
     }
     
   .content-box{
-    @extend %flex;
+    @extend %flex-col;
     padding: 10rem 0;
+    align-items: center;
+    justify-content: center;
     
    
     
