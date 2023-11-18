@@ -8,6 +8,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 
 import { addCountry, fetchByCountry, getChoosenCountry,getStatusByCountry,getErrorByCountry } from "../feature/choosenCountry/choosenCountrySlice";
+import { setIsOpen } from "../feature/open/openSlice";
 
 
 const InputComp = () => {
@@ -36,7 +37,12 @@ const InputComp = () => {
    <label>Choose  a country:</label>
    <select id="country" name="countryList" form="countryform"
           value={countryName}
-          onChange={(e)=>dispatch(addCountry(e.target.value))}>
+          onChange={(e)=>  {
+              dispatch(setIsOpen(false))
+              dispatch(addCountry(e.target.value));
+              }
+ 
+           }>
     <option value="">Select Country...</option>
               {countyArr.map((data)=>{
             return (

@@ -3,6 +3,7 @@
     min-width: 100vw;
     // border:1px solid black;
     padding-left: 38vw;
+    align-items: flex-start;
     
 
    a{
@@ -12,4 +13,11 @@
     }
     
    }
+   button{
+    margin-left: 15vw;
+    &:hover{
+        background-color: $secondary-color;
+    }
+   }
+
 }

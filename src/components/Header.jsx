@@ -9,7 +9,7 @@ export const Header = () => {
 				<nav>
 					<img className="logo" 
 					alt="logo"
-					src="../public/logo.webp"/>
+					src="/logo.webp"/>
 					<ul>
 						<li><a href="#">Home</a></li>
 						<li><a href="#">About</a></li>
