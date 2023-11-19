@@ -9,6 +9,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 import { addCountry, fetchByCountry, getChoosenCountry,getStatusByCountry,getErrorByCountry } from "../feature/choosenCountry/choosenCountrySlice";
 import { setIsOpen } from "../feature/open/openSlice";
+import ExampleLoading from "./Loading";
 
 
 const InputComp = () => {
@@ -54,7 +55,7 @@ const InputComp = () => {
   
   </select>
   <p>Selected Country-{countryName? countryName: "no choosen county"}</p>
-
+  {status==="loading"&& <div><ExampleLoading type={"spinningBubbles"} color={"#002395"}/></div>}
 </>
   )
 }

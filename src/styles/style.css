@@ -54,12 +54,12 @@ a {
 .content-box {
   padding: 10rem 0;
   align-items: center;
-  justify-content: center;
 }
 
 .search-div {
   align-items: center;
   margin-bottom: 15vh;
+  transition: all ease-out 0.1s;
 }
 .search-div select {
   font-size: medium;
@@ -70,9 +70,17 @@ a {
   border-radius: 1rem;
 }
 
+.scrolled {
+  position: fixed;
+  top: 0;
+  background-color: #002395;
+  width: 100vw;
+  z-index: 2;
+}
+
 .link_div {
-  min-width: 100vw;
-  padding-left: 38vw;
+  max-width: 500px;
+  padding-left: 5vw;
   align-items: flex-start;
 }
 .link_div a:hover {
@@ -100,7 +108,6 @@ a {
   color: #fff;
   height: 400px;
   width: 100vw;
-  border: 1px solid orange;
 }
 .showcase nav {
   align-items: center;

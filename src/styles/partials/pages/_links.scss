@@ -1,11 +1,11 @@
 .link_div{
     @extend %flex-col;
-    min-width: 100vw;
+     max-width: 500px;
     // border:1px solid black;
-    padding-left: 38vw;
+    padding-left: 5vw;
     align-items: flex-start;
+   
     
-
    a{
     @extend %text-style;
     &:hover{

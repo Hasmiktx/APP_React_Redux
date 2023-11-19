@@ -3,7 +3,7 @@
    
     align-items: center;
     margin-bottom: 15vh;
-    
+    transition: all ease-out 0.1s;
     
     
     // border: 1px solid rgb(236, 81, 81);
@@ -23,4 +23,11 @@
         border-radius: 1rem;
         
     }
+}
+.scrolled{
+    position: fixed;
+    top:0;
+     background-color:$primary-color;
+     width: 100vw;
+    z-index: 2;
 }
