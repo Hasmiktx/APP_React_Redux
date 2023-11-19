@@ -14,20 +14,23 @@
     p{
         @extend %text-style;
     }
-    select{
+    select{ 
+       
         font-size: medium;
         color: $black-color;
         width: 40vw;
         height: 5vh;
         border: 3px solid $primary-color;
         border-radius: 1rem;
+        padding-left: 5px;
         
     }
 }
 .scrolled{
     position: fixed;
     top:0;
-     background-color:$primary-color;
+     background-color:$light-color;
+     height: 120px;
      width: 100vw;
     z-index: 2;
 }

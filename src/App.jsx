@@ -8,6 +8,7 @@ import { Links } from './components/UniversityLinks'
 import { getStatus } from './feature/country/countrySilice';
 
 import ExampleLoading from './components/Loading';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
     
      
     </div>
+    <Footer/>
         
     </>
   )
